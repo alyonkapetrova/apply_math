@@ -4,9 +4,9 @@
 
 В решении используется чистый питон (версии 3.7) без дополнительных библиотек и хитростей. Как и в будущих задачах, стараюсь держать код чистым, писать простым языком и подробно показывать ход решения.
 
-![dse githubtasks cover rescueship](https://github.com/alyonkapetrova/apply_math/blob/master/wild_dogs/media/dse_githubtasks_cover_rescueship.svg)
-
 ## Задача
+
+![dse githubtasks cover rescueship](https://github.com/alyonkapetrova/apply_math/blob/master/wild_dogs/media/dse_githubtasks_cover_rescueship.svg)
 
 Десант на Кантиту VI провален. Имперский гарнизон встретил нас во всеоружии. Одна половина десанта погибла ещё не ступив на поверхность, другая раскидана по всему спутнику. Наши ребята разделены и окружены.
 
