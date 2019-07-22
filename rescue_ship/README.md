@@ -6,7 +6,7 @@
 
 ## Задача
 
-![dse githubtasks cover rescueship](https://github.com/alyonkapetrova/apply_math/blob/master/wild_dogs/media/dse_githubtasks_cover_rescueship.svg)
+![dse githubtasks cover rescueship](https://github.com/alyonkapetrova/apply_math/blob/master/rescue_ship/media/dse_githubtasks_cover_rescueship.svg)
 
 Десант на Кантиту VI провален. Имперский гарнизон встретил нас во всеоружии. Одна половина десанта погибла ещё не ступив на поверхность, другая раскидана по всему спутнику. Наши ребята разделены и окружены.
 
@@ -49,7 +49,7 @@
 
 ## Решение
 
-![dse githubtasks rescueship coord 01b](https://github.com/alyonkapetrova/apply_math/blob/master/wild_dogs/media/dse_githubtasks_rescueship_coord_01b.svg)
+![dse githubtasks rescueship coord 01b](https://github.com/alyonkapetrova/apply_math/blob/master/rescue_ship/media/dse_githubtasks_rescueship_coord_01b.svg)
 
 > В качестве примера используем координаты четырёх маяков: (2,6), (5,2), (8,-2), (10,4)
 
@@ -62,11 +62,11 @@ __1. Прокладываем прямую__
 ```
 Вспомним уравнение прямой, проходящей через две несовпадающие точки
 
-![line equation formula](https://github.com/alyonkapetrova/apply_math/blob/master/wild_dogs/media/line_equation.svg).
+![line equation formula](https://github.com/alyonkapetrova/apply_math/blob/master/rescue_ship/media/line_equation.svg).
 
-Отлично! Приведём её к общему виду ![line equation normal view letters formula](https://github.com/alyonkapetrova/apply_math/blob/master/wild_dogs/media/line_equation_normal_view_letters.svg). Теперь нам проще выразить __коэффициэнты a, b__ и __c__, они понадобятся нам на следующем шаге.
+Отлично! Приведём её к общему виду ![line equation normal view letters formula](https://github.com/alyonkapetrova/apply_math/blob/master/rescue_ship/media/line_equation_normal_view_letters.svg). Теперь нам проще выразить __коэффициэнты a, b__ и __c__, они понадобятся нам на следующем шаге.
 
-Получается так: ![line equation normal view formula](https://github.com/alyonkapetrova/apply_math/blob/master/wild_dogs/media/line_equation_normal_view.svg).
+Получается так: ![line equation normal view formula](https://github.com/alyonkapetrova/apply_math/blob/master/rescue_ship/media/line_equation_normal_view.svg).
 ```
 >>> a = point_1[1] - point_2[1]
 >>> b = point_2[0] - point_1[0]
@@ -75,13 +75,13 @@ a = 4
 b = 3
 c = -26
 ```
-![dse githubtasks rescueship coord 03b](https://github.com/alyonkapetrova/apply_math/blob/master/wild_dogs/media/dse_githubtasks_rescueship_coord_03b.svg)
+![dse githubtasks rescueship coord 03b](https://github.com/alyonkapetrova/apply_math/blob/master/rescue_ship/media/dse_githubtasks_rescueship_coord_03b.svg)
 
 __2. Вычисляем дистанцию__
 
 У нас есть прямая и коэффициенты a, b и c. Нужно рассчитать расстояние до прямой от исходного положения спасательного челнока. Сделаем это с помощью формулы расстояния от точки до прямой на плоскости. Начальное положение челнока задано координатой (0,0), поэтому формула примет вид:
 
-![point to line distance formula](https://github.com/alyonkapetrova/apply_math/blob/master/wild_dogs/media/point_to_line_distance.svg)
+![point to line distance formula](https://github.com/alyonkapetrova/apply_math/blob/master/rescue_ship/media/point_to_line_distance.svg)
 
 Полученное значение округлим.
 ```
@@ -89,11 +89,11 @@ __2. Вычисляем дистанцию__
 5.2
 ```
 
-![dse githubtasks rescueship coord 04b](https://github.com/alyonkapetrova/apply_math/blob/master/wild_dogs/media/dse_githubtasks_rescueship_coord_04b.svg)
+![dse githubtasks rescueship coord 04b](https://github.com/alyonkapetrova/apply_math/blob/master/rescue_ship/media/dse_githubtasks_rescueship_coord_04b.svg)
 
 __3. Подсчёт количества маяков__
 
-Теперь нужно выяснить, сколько точек (маяков) пересекает прямая. Проверим координаты маяков. Подставим их в уравнение прямой ![line equation normal view letters formula](https://github.com/alyonkapetrova/apply_math/blob/master/wild_dogs/media/line_equation_normal_view_letters.svg). В качестве коэффициентов a, b и c используем значания, полученные на шаге 1. Лежащие на прямой точки прибавим к счётчику count.
+Теперь нужно выяснить, сколько точек (маяков) пересекает прямая. Проверим координаты маяков. Подставим их в уравнение прямой ![line equation normal view letters formula](https://github.com/alyonkapetrova/apply_math/blob/master/rescue_ship/media/line_equation_normal_view_letters.svg). В качестве коэффициентов a, b и c используем значания, полученные на шаге 1. Лежащие на прямой точки прибавим к счётчику count.
 ```
 >>> count = sum(1 for point in coords if a * point[0] + b * point[1] + c == 0)
 3
@@ -112,7 +112,7 @@ __4. Запись полученных данных__
 [3]
 ```
 > Выполняем шаги с первого по четвёртый в цикле и проверяем все возможные варианты прямых.
-![dse githubtasks rescueship coord 02b](https://github.com/alyonkapetrova/apply_math/blob/master/wild_dogs/media/dse_githubtasks_rescueship_coord_02b.svg)
+![dse githubtasks rescueship coord 02b](https://github.com/alyonkapetrova/apply_math/blob/master/rescue_ship/media/dse_githubtasks_rescueship_coord_02b.svg)
 
 __5. Поиск максимальных значений__
 
