@@ -20,7 +20,8 @@ def forest_generator():
 
 forest_1 = forest_generator()
 forest_2 = forest_generator()
-
+print(forest_1)
+print(forest_2)
 
 def forest_cut(truck):
 
@@ -52,7 +53,6 @@ def best_price(cut_1, cut_2):
         print(f"Первый грузовик принесёт {cut_1} кредитов (на {cut_1 - cut_2} кредитов больше, чем второй ({cut_2})).")
     else:
         print(f"Второй грузовик принесёт {cut_2} кредитов (на {cut_2 - cut_1} кредитов больше, чем первый ({cut_1})).")
-
 
 
 best_price(forest_cut(forest_1), forest_cut(forest_2))
