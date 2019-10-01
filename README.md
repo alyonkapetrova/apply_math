@@ -15,3 +15,5 @@
 - **Что дальше?** - Ссылки на похожие примеры и дополнения.
 
 <p align="center"> <img src="https://i.pinimg.com/originals/6b/60/51/6b60519e29d51156a71f5ae0fb913694.gif"> </p>
+
+<p align="center"> <img src="https://github.com/alyonkapetrova/apply_math/tree/master/media/dse_githubtasks_cover_main_01a.svg"> </p>
