@@ -1,6 +1,8 @@
 from random import randint
 
-a = input("Введите объём машин и максимальную длину бревна: ")
+
+a = input("Enter the truck capacity and maximum log lenght: ")
+
 
 def forest_generator():
 
@@ -8,20 +10,18 @@ def forest_generator():
 
     sum_truck = capacity
     truck = []
-    k = 0
+
     while sum_truck > max_len:
         trunk = [randint(0,1) for i in range(randint(2, max_len))]
         truck.append(trunk)
-        sum_truck -= len(truck[k])
-        k += 1
+        sum_truck -= len(trunk)
     truck.append([randint(0,1) for i in range(sum_truck)])
     return truck
 
 
 forest_1 = forest_generator()
 forest_2 = forest_generator()
-print(forest_1)
-print(forest_2)
+
 
 def forest_cut(truck):
 
@@ -50,9 +50,9 @@ def forest_cut(truck):
 def best_price(cut_1, cut_2):
 
     if cut_1 > cut_2:
-        print(f"Первый грузовик принесёт {cut_1} кредитов (на {cut_1 - cut_2} кредитов больше, чем второй ({cut_2})).")
+        print(f"First truck profit is {cut_1}. That's more valuable than second truck profit {cut_2}. Truck 1 is profitable.")
     else:
-        print(f"Второй грузовик принесёт {cut_2} кредитов (на {cut_2 - cut_1} кредитов больше, чем первый ({cut_1})).")
+        print(f"Second truck profit is {cut_2}. That's more valuable than first truck profit {cut_1}. Truck 2 is profitable.")
 
 
 best_price(forest_cut(forest_1), forest_cut(forest_2))
