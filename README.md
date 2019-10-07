@@ -18,10 +18,6 @@
 
 ## Список задач
 
-> поменять на .svg файлы с ссылкой на README.md задач
-
-<img src="https://i.imgur.com/XlKHxvB.png">
-<br/>
-<img src="https://i.imgur.com/FILon45.png">
-<br/>
-<img src="https://i.imgur.com/gm2iJHb.png">
+[<img src="https://github.com/alyonkapetrova/apply_math/blob/master/media/dse_githubtasks_cover_small_rescueship.svg">](https://github.com/alyonkapetrova/apply_math/tree/master/rescue_ship)
+[<img src="https://github.com/alyonkapetrova/apply_math/blob/master/media/dse_githubtasks_cover_small_forestry.svg">](https://github.com/alyonkapetrova/apply_math/tree/master/forestry)
+[<img src="https://github.com/alyonkapetrova/apply_math/blob/master/media/dse_githubtasks_cover_small_payphonehero.svg">](https://github.com/alyonkapetrova/apply_math/tree/master/payphone_hero)
